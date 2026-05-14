@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para el amor de mi vida</title>
+    <!-- Google Fonts para una tipografía romántica y moderna -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+    <!-- Audio de fondo (Reemplazar src con el archivo real) -->
+    <audio id="bg-music" loop>
+        <source src="cancion.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Pantalla Inicial -->
+    <div id="start-screen" class="screen active">
+        <div class="heart-pulse"></div>
+        <h1>Toca para comenzar nuestra historia...</h1>
+    </div>
+
+    <!-- Pantalla Principal de la Animación -->
+    <div id="main-screen" class="screen">
+        <canvas id="tree-canvas"></canvas>
+
+        <div id="content-container" class="hidden">
+            <div class="text-section">
+                <h2 class="title">Flores de cerezo para el<br>amor de mi vida:</h2>
+                <p class="message">Si pudiera elegir un lugar<br>seguro, sería a tu lado.</p>
+                <p class="message">Cuanto más tiempo estoy<br>contigo más te amo.</p>
+            </div>
+
+            <div class="counter-section">
+                <p class="counter-title">Mi amor por ti comenzó hace...</p>
+                <div id="counter-clock" class="counter">
+                    <span id="days">0</span> días
+                    <span id="hours">0</span> horas
+                    <span id="minutes">0</span> minutos
+                    <span id="seconds">0</span> segundos
+                </div>
+            </div>
+
+            <div id="photo-container" class="hidden">
+                <video src="video.mp4" autoplay loop muted playsinline id="couple-photo"></video>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
