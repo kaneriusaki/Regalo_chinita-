@@ -62,7 +62,9 @@ function animateSeed() {
     if (seedY >= height - 50) {
         animationState = 'growing';
         let startX = window.innerWidth > 768 ? width * 0.70 : width / 2;
-        growTree(startX, height - 50, -Math.PI / 2, 130, 20);
+        let startLength = window.innerWidth > 768 ? 130 : 80;
+        let startWidth = window.innerWidth > 768 ? 20 : 12;
+        growTree(startX, height - 50, -Math.PI / 2, startLength, startWidth);
     } else {
         requestAnimationFrame(animateSeed);
     }

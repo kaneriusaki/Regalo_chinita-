@@ -199,28 +199,34 @@ body {
     .text-section {
         max-width: 100%;
         text-align: center;
-        background: rgba(253, 246, 227, 0.7); /* Para legibilidad sobre el árbol */
-        padding: 15px;
-        border-radius: 15px;
-        margin: 10% auto 0;
+        background: transparent;
+        padding: 5px;
+        border-radius: 0;
+        margin: 5% auto 0;
     }
     .counter-section {
         align-self: center;
         text-align: center;
-        background: rgba(253, 246, 227, 0.7);
-        padding: 10px;
-        border-radius: 10px;
+        background: transparent;
+        padding: 5px;
+        border-radius: 0;
         border-bottom: none;
+        margin-bottom: 10px;
+    }
+    .title, .message, .counter-title, .counter {
+        text-shadow: 0 0 10px var(--bg-color), 0 0 15px var(--bg-color), 0 0 20px var(--bg-color);
+        position: relative;
+        z-index: 10;
     }
     #photo-container {
-        margin: 20px auto 0;
-        width: 150px;
-        height: 150px;
+        margin: 10px auto;
+        width: 120px;
+        height: 120px;
     }
     .title {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     .counter {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 }
